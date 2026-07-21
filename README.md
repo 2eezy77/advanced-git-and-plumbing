@@ -1,67 +1,65 @@
-# Learn Git: Beyond "Add, Commit, Push, and Pray"
+# Advanced Git and Plumbing
 
 **Completed by Jose I. Montero** | December 15, 2025
-A comprehensive deep-dive into Git internals, plumbing commands, and professional workflows based on the [Boot.dev](https://www.boot.dev) course by **ThePrimeagen**.
 
----
+Notes and practice artifacts from a deep dive into Git internals, plumbing commands, and professional workflows, based on the [Boot.dev](https://www.boot.dev) course by ThePrimeagen.
 
-## 📖 Course Overview
+This repository focuses on how Git stores data, how hashes and refs work, and how to manipulate history with intention rather than trial and error.
 
-This course moves beyond the surface-level commands that most developers rely on. It focuses on the **"plumbing"** of Git—understanding how the file system stores data, how hashes work, and how to manipulate history with precision rather than luck.
+## Course overview
 
-* **Instructor:** ThePrimeagen (Ex-Netflix Engineer)
-* **Duration:** 8 Hours of content
-* **Format:** 75 Interactive, addicting lessons
-* **Focus:** Git internals, rebasing, and professional repository management.
+- **Instructor:** ThePrimeagen
+- **Scope:** ~8 hours, 75 interactive lessons
+- **Focus:** Git internals, rebasing, reset, remotes, and repository hygiene
 
----
+## Skills covered
 
-## 🛠️ Skills Mastered
+### Git internals and plumbing
 
-### 1. Git Internals & "Plumbing"
+Git as a content-addressable filesystem:
 
-Understanding that Git is essentially a content-addressable filesystem.
+- Exploring `.git` objects, refs, and the index
+- How Git stores blobs, trees, and commits on disk
+- Low-level plumbing commands that sit under everyday porcelain (`add`, `commit`)
 
-* **The .git Directory:** Exploring objects, refs, and the index.
-* **Internal Storage:** Learning how Git stores data on the filesystem.
-* **Plumbing Commands:** Using low-level commands to see exactly how `commit` and `add` function under the hood.
+### Advanced workflow and history
 
-### 2. Advanced Workflow & History
+- Rebase vs merge for a clean, linear history
+- Reset to undo and recover with confidence
+- Branching as context switching, not just naming
 
-* **Rebase vs. Merge:** Moving away from messy merge commits to maintain a clean, linear project history—the "cooler" way to integrate changes.
-* **Resetting:** Mastering the `reset` command to undo changes and fix mistakes with confidence.
-* **Branching Strategy:** Practice creating, switching, and managing context within a project.
+### Collaboration and configuration
 
-### 3. Collaboration & Configuration
+- Remotes, push/pull, and GitHub hosting
+- Local and global `.gitconfig`
+- `.gitignore` patterns for clean working trees
 
-* **Remote Management:** Setting up remote repositories and mastering the push/pull cycle.
-* **Custom Config:** Tailoring `.gitconfig` to set up user information and optimize the local environment.
-* **GitHub Integration:** Bridging local Git knowledge with the world's most popular hosting service.
-* **Gitignore:** Efficiently excluding files and directories from tracking.
+## Chapter breakdown
 
----
-
-## 🗂️ Chapter Breakdown
-
-| Chapter | Focus | Key Concept |
+| Chapter | Focus | Key concept |
 | --- | --- | --- |
-| **1-2** | Setup & Repos | Initializing and understanding what a repository actually is. |
-| **3** | Internals | Data storage on the filesystem and the plumbing commands. |
-| **4** | Config | Setting up user identity and global configuration. |
-| **5-7** | Branch/Merge/Rebase | Professional methods for integrating code changes. |
-| **8** | Reset | The logic of undoing changes. |
-| **9-11** | Remote & GitHub | Hosting, `.gitignore`, and collaborative workflows. |
+| 1–2 | Setup and repos | What a repository actually is |
+| 3 | Internals | Filesystem storage and plumbing |
+| 4 | Config | Identity and global settings |
+| 5–7 | Branch / merge / rebase | Integrating changes cleanly |
+| 8 | Reset | Undoing changes safely |
+| 9–11 | Remote and GitHub | Hosting, ignore rules, collaboration |
 
----
+## Repository contents
 
-## 🚀 Proof of Completion
+| Path | Purpose |
+| --- | --- |
+| [`contents.md`](contents.md) | Index of practice files |
+| [`titles.md`](titles.md) | Sample titles collection |
+| [`classics.csv`](classics.csv) | CSV practice data |
+| [`quotes/`](quotes/) | Quote files used in course exercises |
 
-I have successfully completed all 75 lessons and mastered the foundational concepts required to use Git as a professional developer.
+## Proof of completion
 
-* **Completion Date:** December 15, 2025
-* **Certificate ID:** `74ea3f12-426f-49e8-83fe-2277c67f6ab4`
-* **Project Repository:** [Insert Link to Your Repo Here]
+- **Completion date:** December 15, 2025
+- **Certificate ID:** `74ea3f12-426f-49e8-83fe-2277c67f6ab4`
+- **Repository:** [github.com/2eezy77/advanced-git-and-plumbing](https://github.com/2eezy77/advanced-git-and-plumbing)
 
-> "Mediocrity doesn't cut it anymore. To truly be great you need to understand your tools."
+## License
 
----
+MIT — see [LICENSE](LICENSE).
